@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="log.css">
+   <script type="text/javascript">
+function validate()
+{
+  if(reg.fname.value=="")
+  {
+    alert("Please enter your First Name");
+    return false;
+  }
+  if(reg.lname.value=="")
+  {
+    alert("Please enter your Last Name");
+    return false;
+  }
+  if(reg.email.value=="")
+  {
+    alert("Please enter your E-mail");
+    return false;
+  }
+  if(reg.password.value=="")
+  {
+    alert("Please enter your password");
+    return false;
+  }
+  return true;
+}
+</script>
+  <title></title>
+</head>
+<body >
+  <div class="one">
+   <a href="home.php"><img  src="imag/download.png"></a>
+    <h1>Create your account</h1>
+    <div id="two">
+     <form name="reg" action="signup.php" onsubmit="return validate()" method="post">
+       <h4> *required field</h4>
+      <span>First Name*</span><br>
+     <input type="text" name="fname">
+     <br>
+      <span>Last Name*</span><br>
+     <input type="text" name="lname"><br>
+     <span>E-mail*</span><br>
+     <input type="email" name="email"><br>
+     <span>Create a password*</span><br>
+     <input type="password" name="password"><br>
+     Must contain between 6 to 12 characters.
+     <br>
+     <br>
+      <div id ="tou">By clicking Create Account, you acknowledge you have read and agreed to our 
+      <a href="#">Terms of Use</a>.</div> 
+      <br>
+     <button name="submit">Create your account</button>
+     <br><br>
+   </form>
+    <form>
+     <div id="act">Already have an account?</div>
+     <br><br>
+     <button id="sin"><a href="log.html">Log In</a></button>
+    </div>
+    </form>
+    <br>
+</body>
+</html>

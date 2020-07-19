@@ -1,0 +1,53 @@
+<?php 
+session_start();
+ ?>
+<!DOCTYPE html>
+<html>
+<head>
+      <script type="text/javascript">
+function validate()
+{
+  if(reg.username.value=="")
+  {
+    alert("Please enter your Username");
+    return false;
+  }
+  if(reg.password.value=="")
+  {
+    alert("Please enter your Address");
+    return false;
+  }
+  return true;
+}
+</script>
+
+  <link rel="stylesheet" type="text/css" href="log.css">
+  <title></title>
+</head>
+<body >
+
+  <div class="one">
+    <a href="home.php"> <img  src="imag/download.png"></a>
+   <h1>Sign in  </h1>
+ <div id="two">
+ 	<form name="reg" action="login.php" onsubmit="return validate()" method="post">
+     <span>Username</span><br>
+     <input type="email" name="username">
+     <br>
+     <span>Password</span><br>
+     <input type="password" name="password">
+     <br>
+     <br>
+     <button name="submit" >Log In</button>	
+     <br><br>
+     </form>
+     <form>
+     <div id="act">Don't have an account?</div>
+     <br><br>
+     <button id="sin"><a href="sign.html">Create a new account</a></button>
+	</form>
+ </div> 
+ </div>  
+</body>
+
+</html>
